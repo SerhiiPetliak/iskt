@@ -19,8 +19,43 @@
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet">
 
+        <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- Material Design Bootstrap -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <script>
+        // Initialize collapse button
+        $(".button-collapse").sideNav();
+        // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+        $('.collapsible').collapsible();
+    </script>
+
     
     <link href="css/style.css" rel="stylesheet">
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            
+            // Плавный скролл по якорям
+            $('a[href^="#"]').click(function () { 
+                elementClick = $(this).attr("href");
+                destination = $(elementClick).offset().top;
+                if($.browser.safari){
+                    $('body').animate( { scrollTop: destination }, 1000 );
+                } else {
+                    $('html').animate( { scrollTop: destination }, 1000 );
+                }
+                return false;
+           });
+        });
+    </script>
 
 </head>
 
@@ -50,18 +85,18 @@
         </div>
     </nav>
     <!--/.Navigation-->
+<a href="#docs" class="waves-effect waves-light">Контакти</a>
 
-
-    <section id="about">
+    <section id="about" data-name="about">
         <h1>Про нас</h1>
     </section>
-    <section id="team">
+    <section id="team" name="team">
         <h1>Наша команда</h1>
     </section>
-    <section id="docs">
+    <section id="docs" name="docs">
         <h1>Документи</h1>
     </section>
-    <footer id="contacts">
+    <footer id="contacts" name="contacts">
         <h1>Контакти</h1>
     </footer>
 
@@ -70,23 +105,7 @@
 
 
 
-    <!-- SCRIPTS -->
 
-    <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-
-    <!-- Material Design Bootstrap -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
-
-    <script>
-        // Initialize collapse button
-        $(".button-collapse").sideNav();
-        // Initialize collapsible (uncomment the line below if you use the dropdown variation)
-        $('.collapsible').collapsible();
-    </script>
 
 </body>
 
