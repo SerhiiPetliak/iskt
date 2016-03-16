@@ -1,0 +1,37 @@
+body{
+    background-color: #ccc;
+    color: #000 !important;
+    padding-top: 80px;
+    position: relative;
+}
+.top-nav-collapse {
+    background-color: #3F729B !important;
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+    .navbar {
+         background-color: #3F729B !important;
+    }
+}
+
+
+#about{
+    height: 1000px;
+    background-color: yellow;
+}
+#team{
+    height: 1000px;
+    background-color: #ccc;
+}
+#contacts{
+    height: 1000px;
+    background-color: green;
+}
+#docs{
+    height: 1000px;
+    background-color: gold;
+}
+section{
+    height: 1000px;
+    border: 1px solid red;
+}
