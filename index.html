@@ -30,6 +30,8 @@
     <!-- Material Design Bootstrap -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
     <script>
         // Initialize collapse button
         $(".button-collapse").sideNav();
@@ -41,20 +43,14 @@
     <link href="css/style.css" rel="stylesheet">
 
     <script type="text/javascript">
-        $(document).ready(function(){
-            
-            // Плавный скролл по якорям
-            $('a[href^="#"]').click(function () { 
-                elementClick = $(this).attr("href");
-                destination = $(elementClick).offset().top;
-                if($.browser.safari){
-                    $('body').animate( { scrollTop: destination }, 1000 );
-                } else {
-                    $('html').animate( { scrollTop: destination }, 1000 );
-                }
-                return false;
-           });
+      $(document).ready(function() {
+        $("a.ancLinks").click(function () {
+          var elementClick = $(this).attr("href");
+          var destination = $(elementClick).offset().top;
+          $('html,body').animate( { scrollTop: destination }, 1100 );
+          return false;
         });
+      });
     </script>
 
 </head>
@@ -76,16 +72,15 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav pull-right">
-                    <li><a href="#about" class="waves-effect waves-light">Про нас</a></li>
-                    <li><a href="#team" class="waves-effect waves-light">Наша команда</a></li>
-                    <li><a href="#contacts" class="waves-effect waves-light">Документи</a></li>
-                    <li><a href="#docs" class="waves-effect waves-light">Контакти</a></li>
+                    <li><a href="#about" class="waves-effect waves-light ancLinks">Про нас</a></li>
+                    <li><a href="#team" class="waves-effect waves-light ancLinks">Наша команда</a></li>
+                    <li><a href="#docs" class="waves-effect waves-light ancLinks">Документи</a></li>
+                    <li><a href="#contacts" class="waves-effect waves-light ancLinks">Контакти</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <!--/.Navigation-->
-<a href="#docs" class="waves-effect waves-light">Контакти</a>
 
     <section id="about" data-name="about">
         <h1>Про нас</h1>
