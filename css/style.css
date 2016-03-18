@@ -37,3 +37,11 @@ footer{
     background-color: #000;
     border: 0px solid red;
 }
+.alert_block{
+    height: 200px;
+    background-color: #fff;
+}
+.fa-exclamation-triangle,
+.red-text{
+    color: red;
+}
