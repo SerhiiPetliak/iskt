@@ -612,6 +612,7 @@ section{
 }
 .about_block{
     text-align: center;
+    padding-top: 50px;
 }
 
 .bgg{
@@ -671,3 +672,6 @@ section{
 
 
 /* */
+footer.page-footer {
+    margin-top: 0;
+}
