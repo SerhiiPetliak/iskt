@@ -17,7 +17,7 @@ body{
 
 #about{
     height: 1000px;
-    background-image: url(../img/bg1.jpg);
+    background: url(../img/bg1.jpg) fixed no-repeat center center;
     background-size: cover;
 }
 
@@ -38,10 +38,37 @@ footer{
     border: 0px solid red;
 }
 .alert_block{
-    height: 200px;
+    /*height: 200px;*/
     background-color: #fff;
 }
 .fa-exclamation-triangle,
 .red-text{
     color: red;
+}
+/**/
+.about_block{
+    text-align: center;
+    padding-top: 50px;
+}
+.main_title{
+    color: #fff;
+    font-size: 32px;
+    border-bottom: 0px solid #fff;
+}
+.alert_block{
+    text-align: justify;
+}
+section{
+    padding: 30px 0px 30px 0px;
+}
+.bottom_button{
+    color: #fff;
+    border: 2px solid #fff;
+    width: 40px;
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+}
+.bottom_button a{
+    color: #fff;
 }
