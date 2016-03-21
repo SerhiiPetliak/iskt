@@ -42,8 +42,6 @@
     
     <link href="css/style.css" rel="stylesheet">
 
-    <!--<link href="css/bottom_scroll.css" rel="stylesheet">-->
-
     <script type="text/javascript">
       $(document).ready(function() {
         $("a.ancLinks").click(function () {
@@ -51,6 +49,14 @@
           var destination = $(elementClick).offset().top;
           $('html,body').animate( { scrollTop: destination }, 1100 );
           return false;
+        });
+        $(window).scroll(function(){                              // отслеживаем событие
+           if ( $(window).scrollTop() >= 80 ){                   // ставим условие
+              $('#section05').css('display','none');         // определяем действие
+           }
+           if ( $(window).scrollTop() == 0 ){                   // ставим условие
+              $('#section05').css('display','block');         // определяем действие
+           }
         });
       });
     </script>
@@ -88,7 +94,7 @@
         <div class="container">
             <div class="row about_block">
                 <div class="col-md-12">
-                    <span class="main_title"><h2>Лабораторія інформаційних систем та комп'ютерних технологій</h2></span>
+                    <h2 class="main_title">Лабораторія інформаційних систем та комп'ютерних технологій</h2>
                 </div>
             </div>
             <!--<a href="#alert" class="bottom_button">
@@ -96,9 +102,11 @@
             </a>-->
 
         </div>
-            <section id="section10" class="demo">
-                <a href="#thanks"><span></span>Scroll</a>
-            </section>
+
+        <section id="section05" class="demo">
+            <a href="#alert" class="ancLinks"><span></span></a>
+        </section>
+
     </section>
 
     <section id="alert" data-name="alert" class="alert_block">
@@ -123,22 +131,142 @@
 
     <section id="team" data-name="team">
         <div class="container">
+            Наша команда
             <div class="row about_block">
-                    <h1>Наша команда</h1>
-                <div class="col-md-6">
-                    Група розробки та впровадження програмного забезпечення
+                <div class="col-md-3">  
+                    <div class="view overlay hm-black-light" >
+                        <img src="img/manager.jpg" class="img-circle img-responsive" alt="">
+                        <div class="avatar img-circle mask" style="width: 150px;">
+                            <div class="verticalcenter">
+                                <p class="white-text text-center">Група розробки та впровадження програмного забезпечення</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h5>Чувак В.В.</h5>
                 </div>
-                <div class="col-md-6">
-                    Група системного адміністрування та обслуговування локальної мережі
+                <div class="col-md-3">
+                    <div class="view overlay hm-black-light">
+                        <img src="img/manager.jpg" class="img-circle img-responsive" alt="">
+                        <div class="avatar img-circle mask" style="width: 150px;">
+                            <div class="verticalcenter">
+                                <p class="white-text text-center">Група розробки та впровадження програмного забезпечення</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h5>Чувак В.В.</h5>
+                </div>
+                <div class="col-md-3">
+                    <div class="view overlay hm-black-light">
+                        <img src="img/manager.jpg" class="img-circle img-responsive" alt="">
+                        <div class="avatar img-circle mask" style="width: 150px;">
+                            <div class="verticalcenter">
+                                <p class="white-text text-center">Група розробки та впровадження програмного забезпечення</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h5>Чувак В.В.</h5>
+                </div>
+                <div class="col-md-3">
+                    <div class="view overlay hm-black-light">
+                        <img src="img/manager.jpg" class="img-circle img-responsive" alt="">
+                        <div class="avatar img-circle mask" style="width: 150px;">
+                            <div class="verticalcenter">
+                                <p class="white-text text-center">Група розробки та впровадження програмного забезпечення</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h5>Чувак В.В.</h5>
                 </div>
             </div>
+            <div class="row about_block">
+                <div class="col-md-3">  
+                    <div class="view overlay hm-black-light">
+                        <img src="img/manager.jpg" class="img-circle img-responsive" alt="">
+                        <div class="avatar img-circle mask" style="width: 150px;">
+                            <div class="verticalcenter">
+                                <p class="white-text text-center">Група розробки та впровадження програмного забезпечення</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h5>Чувак В.В.</h5>
+                </div>
+                <div class="col-md-3">
+                    <div class="view overlay hm-black-light">
+                        <img src="img/manager.jpg" class="img-circle img-responsive" alt="">
+                        <div class="avatar img-circle mask" style="width: 150px;">
+                            <div class="verticalcenter">
+                                <p class="white-text text-center">Група розробки та впровадження програмного забезпечення</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h5>Чувак В.В.</h5>
+                </div>
+                <div class="col-md-3">
+                    <div class="view overlay hm-black-light">
+                        <img src="img/manager.jpg" class="img-circle img-responsive" alt="">
+                        <div class="avatar img-circle mask" style="width: 150px;">
+                            <div class="verticalcenter">
+                                <p class="white-text text-center">Група розробки та впровадження програмного забезпечення</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h5>Чувак В.В.</h5>
+                </div>
+                <div class="col-md-3">
+                    <div class="view overlay hm-black-light">
+                        <img src="img/manager.jpg" class="img-circle img-responsive" alt="">
+                        <div class="avatar img-circle mask" style="width: 150px;">
+                            <div class="verticalcenter">
+                                <p class="white-text text-center">Група розробки та впровадження програмного забезпечення</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h5>Чувак В.В.</h5>
+                </div>
+            </div>
+            <div class="row about_block">
+                <div class="col-md-3 col-md-offset-2"  style="text-align: left;">  
+                    <div class="view overlay hm-black-light">
+                        <img src="img/manager.jpg" class="img-circle img-responsive" alt="">
+                        <div class="avatar img-circle mask" style="width: 150px;">
+                            <div class="verticalcenter">
+                                <p class="white-text text-center">Група розробки та впровадження програмного забезпечення</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h5>Чувак В.В.</h5>
+                </div>
+                <div class="col-md-3">
+                    <div class="view overlay hm-black-light">
+                        <img src="img/manager.jpg" class="img-circle img-responsive" alt="">
+                        <div class="avatar img-circle mask" style="width: 150px;">
+                            <div class="verticalcenter">
+                                <p class="white-text text-center">Група розробки та впровадження програмного забезпечення</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h5>Чувак В.В.</h5>
+                </div>
+                <div class="col-md-3">
+                    <div class="view overlay hm-black-light">
+                        <img src="img/manager.jpg" class="img-circle img-responsive" alt="">
+                        <div class="avatar img-circle mask" style="width: 150px;">
+                            <div class="verticalcenter">
+                                <p class="white-text text-center">Група розробки та впровадження програмного забезпечення</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h5>Чувак В.В.</h5>
+                </div>
+            </div>
+
         </div>
     </section>
 
     <section id="docs" data-name="docs">
         <div class="container">
             <div class="row about_block">
-                <h1>Документи</h1>
+                Документи<br>
                 <div class="col-md-4"> 
                     Положення про лабораторію інформаційних систем та комп’ютерних технологій математичного факультету Запорізького національного університету
                 </div>
@@ -153,7 +281,7 @@
     </section>
 
     <footer id="contacts" data-name="contacts">
-        <h1>Контакти</h1>
+        hjgjgj
     </footer>
 
 <!--Main part-->
