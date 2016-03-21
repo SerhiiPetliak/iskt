@@ -617,7 +617,6 @@ section{
 .bgg{
     border: 0px solid red;
     height: 200px;
-    background-color: #fff;
 }
 .bggg{
     border: 0px solid red;
@@ -628,3 +627,47 @@ section{
     background: url(../img/manager2.jpg)  no-repeat center center;
     background-size: cover;
 }
+/* */
+/* весь контейнер поддерживает перспективу */
+.flip-container {
+    perspective: 1000;
+}
+    /* переверните сторону при проведении мышью */
+    .flip-container:hover .flipper, .flip-container.hover .flipper {
+        transform: rotateY(180deg);
+    }
+
+.flip-container, .front, .back {
+    
+}
+
+/* здесь находится скорость перевертывания */
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+/* скройте обратную сторону во время переворота */
+.front, .back {
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* лицевая сторона размещена над обратной */
+.front {
+    z-index: 2;
+}
+
+/* обратная, изначально скрытая сторона */
+.back {
+    z-index: 3;
+    transform: rotateY(180deg);
+}
+
+
+/* */
