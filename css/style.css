@@ -613,3 +613,18 @@ section{
 .about_block{
     text-align: center;
 }
+
+.bgg{
+    border: 0px solid red;
+    height: 200px;
+    background-color: #fff;
+}
+.bggg{
+    border: 0px solid red;
+    height: 200px;
+}
+
+.aaa{
+    background: url(../img/manager2.jpg)  no-repeat center center;
+    background-size: cover;
+}
